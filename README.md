@@ -30,18 +30,18 @@
 {
   "action" : "issue.send.test",
   "letter" : {
-    "subject" : "Тема письма"
-    "from.name" : "Имя отправителя" 
-    "from.email" : "Адрес отправителя (email)"
-    "to.name" : "Имя получателя"
-    "message": { "text" : "текстовая версия письма" }
-    "attaches": [ 
-                  {
-                    "name" : "имя файла",
-                    "content": "содержимое файла закодированное base64",
-                    "encoding" : "base64",
-                  }
-                ]
+    "subject" : "Тема письма",
+    "from.name" : "Имя отправителя", 
+    "from.email" : "Адрес отправителя (email)",
+    "to.name" : "Имя получателя",
+    "message": { "text" : "текстовая версия письма" },
+    "attaches": [
+      {
+	"name" : "имя файла",
+        "content": "содержимое файла закодированное base64",
+        "encoding" : "base64"
+      }
+    ]
   },
   "sendwhen": "test",
   "mca": [
@@ -54,7 +54,7 @@
 
 ```json
 {
-	track.id: "8888"
+  "track.id": "8888"
 }
 ```
 
@@ -62,9 +62,9 @@
 
 ```json
 { 
-	"action": "track.get",
-	"id": "8888", 
-	"session": "session" 
+  "action": "track.get",
+  "id": "8888", 
+  "session": "session" 
 }
 ```
 
@@ -72,8 +72,8 @@
 
 ```json
 {
-  obj: { 
-    "status": “статус (варианты перечислены ниже)” 
+  "obj": { 
+    "status": "статус (варианты перечислены ниже)" 
   }
 }
 
